@@ -476,13 +476,10 @@ Please read our [Code of Conduct](CODE_OF_CONDUCT.md) to understand the expectat
 - Educational lab exercises and assignments
 - Open-source community for inspiration and support
 
----
 
-## 📈 Project Statistics
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=H0NEYP0T-466&repo=matlab-workbench&show_icons=true&theme=radical)
 
----
+
 
 <p align="center">
   <strong>Made with ❤️ by H0NEYP0T-466</strong>
