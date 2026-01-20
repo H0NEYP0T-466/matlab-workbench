@@ -1,0 +1,121 @@
+name: Bug report
+description: Report a reproducible problem
+labels: ["bug"]
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the form below to help us understand and fix the issue.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Bug Summary
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe the issue in one or two sentences...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Detailed steps to reproduce the behavior
+      placeholder: |
+        1. Open MATLAB and navigate to '...'
+        2. Run script '...'
+        3. Enter input '...'
+        4. See error
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen
+      placeholder: The script should produce...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happened
+      placeholder: Instead, the script produces...
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Information about your environment
+      placeholder: |
+        - OS: [e.g., Windows 11, macOS 13.0, Ubuntu 22.04]
+        - MATLAB Version: [e.g., R2022a, R2023b]
+        - Image Processing Toolbox Version: [e.g., 11.5]
+      value: |
+        - OS: 
+        - MATLAB Version: 
+        - Image Processing Toolbox Version: 
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Messages / Logs
+      description: Please paste any relevant error messages or console output
+      render: shell
+      placeholder: |
+        Paste error messages here...
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain the problem
+      placeholder: Drag and drop images here or paste image links...
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How severe is this bug?
+      options:
+        - Critical - Blocks all usage
+        - High - Major functionality broken
+        - Medium - Feature partially works
+        - Low - Minor issue or cosmetic
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here
+      placeholder: |
+        - This issue started after...
+        - It only happens when...
+        - Related to issue #...
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      description: Please confirm the following before submitting
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have provided all required information above
+          required: true
+        - label: I have included steps to reproduce the issue
+          required: true
